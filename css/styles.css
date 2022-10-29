@@ -310,6 +310,67 @@ Services
 ===============
 */
 
+.services {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-icon {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service-text {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+
+  .service-icon {
+    align-self: flex-start;
+  }
+
+  .service-info {
+    padding-left: 1rem;
+  }
+}
+
 /*
 =============== 
 Featured Tours
