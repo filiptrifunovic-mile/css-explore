@@ -546,6 +546,60 @@ Gallery
 ===============
 */
 
+.gallery-img-container {
+  position: relative;
+  background: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.gallery-icon {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.6;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-img-container {
+    width: 25%;
+  }
+}
+
 /*
 =============== 
 Footer
