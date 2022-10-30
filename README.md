@@ -1,1 +1,1 @@
-filip-explore.netlify.app
+https://filip-explore.netlify.app
